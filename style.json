@@ -1,0 +1,173 @@
+{
+	"QMainWindow":[
+		{
+			"tittle":"Detras V0.1",
+			"icon":":/icons/icons/activity.svg",
+			"frameless": false,
+			"transluscentBg": true,
+			"sizeGrip": "sizeGrip"
+		}
+	],
+	"QCustomSlideMenu": [{
+		"name": "LeftMenuContainer",
+		"defaultSize": [{
+			"width": 45,
+			"height": "parent"
+		}],
+		"collapsedSize": [{
+			"width": 45,
+			"height": "parent"
+		}],
+		"expandedSize": [{
+			"width": 140,
+			"height": "parent"
+		}],
+		"toggleButton": [{
+			"buttonName": "menuBtn",
+			"icons": [{
+				"whenMenuIsCollapsed": ":/icons/icons/align-justify.svg",
+				"whenMenuIsExpanded": ":/icons/icons/chevron-left.svg"
+			}]
+		}],
+		"menuTransitionAnimation": [{
+			"animationDuration": 400,
+			"animationEasingCurve": "Linear"
+		}]
+	},
+	{
+		"name": "popupNotificationContainer",
+		"defaultSize": [{
+			"width": 0,
+			"height": "auto"
+		}],
+		"collapsedSize": [{
+			"width": 0,
+			"height": "auto"
+		}],
+		"expandedSize": [{
+			"width": 500,
+			"height": 100
+		}],
+		"toggleButton": [{
+			"buttonName": "notificationBtn",
+			"icons": [{
+				"whenMenuIsCollapsed": ":/icons/icons/bell.svg",
+				"whenMenuIsExpanded": ":/icons/icons/bell-off.svg"
+			}]
+		}],
+		"menuTransitionAnimation": [{
+			"animationDuration": 200,
+			"animationEasingCurve": "Linear"
+		}],
+		"floatPosition": [
+			{
+				"relativeTo": "centralwidget",
+				"position": "center-center",
+				"shadow":[
+					{
+						"color": "#000",
+						"blurRadius": 20,
+						"xOffset": 0,
+						"yOffset": 0
+					}
+				]
+			}
+		]
+	}],
+	"QCustomQStackedWidget":[
+		{
+			"name":"mainPages",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"homebtn": "homePage",
+							"obdbtn": "obdPage",
+							"imusbtn": "imuPage",
+							"gpsbtn": "gpsPage",
+							"cambtn": "cameraPage"
+						}
+					]
+				}
+			]
+	
+		},
+		{
+			"name":"imuPages",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"BLoadFileInertial" : "LoadIMU",
+							"BRawDatabtn": "rawDataIMU",
+							"BQuaternionbtn": "quaternion",
+							"BEulerbtn": "eulerAngle",
+							"BSimulationbtn": "simulation",
+							"BImpact": "ImpactPage",
+							
+							"FLoadFileInertial" : "LoadIMU",
+							"FRawDatabtn": "rawDataIMU",
+							"FQuaternionbtn": "quaternion",
+							"FEulerbtn": "eulerAngle",
+							"FSimulationbtn": "simulation",
+							"FImpact": "ImpactPage",
+
+							"iLoadFileInertial" : "LoadIMU",
+							"iRawDatabtn": "rawDataIMU",
+							"iQuaternionbtn": "quaternion",
+							"iEulerbtn": "eulerAngle",
+							"iSimulationbtn": "simulation",
+							"iImpact": "ImpactPage",
+
+							"qLoadFileInertial" : "LoadIMU",
+							"qRawDatabtn": "rawDataIMU",
+							"qQuaternionbtn": "quaternion",
+							"qEulerbtn": "eulerAngle",
+							"qSimulationbtn": "simulation",
+							"qImpact": "ImpactPage",
+							
+							"eLoadFileInertial" : "LoadIMU",
+							"eRawDatabtn": "rawDataIMU",
+							"eQuaternionbtn": "quaternion",
+							"eEulerbtn": "eulerAngle",
+							"eSimulationbtn": "simulation",
+							"eImpact": "ImpactPage",
+
+							"sLoadFileInertial" : "LoadIMU",
+							"sRawDatabtn": "rawDataIMU",
+							"sQuaternionbtn": "quaternion",
+							"sEulerbtn": "eulerAngle",
+							"sSimulationbtn": "simulation",
+							"sImpact": "ImpactPage"
+
+						}
+					]
+				}
+			]
+	
+		},
+		{
+			"name":"obdPages",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"LoadFileOBD": "LoadOBD",
+							"loadobd1btn1": "obd1",
+							"loadobd1btn2": "obd2",
+
+							"LoadFileOBD1": "LoadOBD",
+							"obd1btn1": "obd1",
+							"obd1btn2": "obd2",
+							
+							"LoadFileOBD2": "LoadOBD",
+							"obd2btn1": "obd1",
+							"obd2btn2": "obd2"
+						}
+					]
+				}
+			]
+	
+		}
+	]
+}	
